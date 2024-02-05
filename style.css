@@ -1,0 +1,291 @@
+html{
+    width: auto;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+
+.sectionA{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #dad7cd;
+    
+
+}
+
+
+.titlename{
+    display: inline;
+    text-align: center;
+}
+
+
+.svg{
+    position: relative;
+    width: 100px;
+    margin: auto;
+    left: 20%;
+    
+}
+
+
+.svg a{
+    color: black;
+    transition: 1s ease;
+    text-decoration: none;
+}
+
+.svg a:hover{
+    transition: 1s ease;
+    color: #d4a373;
+}
+
+ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    
+   
+}
+
+li a{
+    color: black;
+    transition: 1s ease;
+    text-decoration: none;
+}
+
+
+li a:hover{
+    transition: 1s ease;
+    color: #d4a373;
+}
+
+
+
+.cont_nav{
+    position: relative;
+    width: 390px;
+    margin: auto;
+    top: 0.5em;
+    
+}
+
+
+.column{
+    display: flex;
+}
+
+
+.photo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 4px;
+    
+}
+
+
+
+.photo img:hover {
+    transform: scale(1.1); /* Збільшення зображення на 10% при наведенні */
+    transition: transform 0.3s ease; /* Плавний перехід між станами */
+}
+
+.photo img{
+    
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+    border: 2px solid #B9B7BD;
+    object-fit: cover;
+    border-radius: 5%; 
+    
+}
+
+.zoomed-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: 2s ease;
+}
+
+.zoomed-container img {
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+/* Початок другої сторінки Biography*/
+
+
+.cont_A{
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+    font-size: 0.9em;
+}
+
+/* початок третьої сторінки контакт*/
+.cont_M{
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    font-size: 0.9em;
+}
+
+
+
+.form{
+    margin: auto;
+    width: 350px;
+    height: 400px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+        
+      
+}
+
+.input-groupA {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.input-groupB{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start; 
+    
+}
+
+#subject,#email,#adres{
+    position: relative;
+    width: 342px;
+
+}
+
+
+#textarea{
+    width: 342px;
+    height: 100px;
+    resize: none;
+    overflow: none;
+}
+
+
+
+
+ #button{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    
+}
+.send,.reset{
+    border: none;
+    background-color: transparent;
+    box-shadow: 1px 1px 1px 1px;
+    transition: 1s ease;
+}
+
+.send:hover,.reset:hover{
+    font-size: larger;
+    transition: 1s ease;
+}
+
+
+
+
+
+.send.clicked {
+    animation: clickAnimation 1s ease;
+}
+
+@keyframes clickAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@media only screen and (max-width: 480px) and (min-width: 320px) and (max-device-width: 6.7in) and (min-device-width: 6.6in) {
+    /* Тут вказуйте ваші стилі для телефонів з діагоналлю близькою до 6.7 дюйма */
+    .form{
+        width: auto;
+    }
+}
+
+
+
+/* Медіа-запит для екранів шириною менше 600px */
+@media screen and (max-width: 600px) {
+    .form {
+        width: 90%;
+    }
+    /* Додаткові стилі для інших елементів, які ви хочете модифікувати для малих екранів */
+    .input-groupA, .input-groupB {
+        gap: 5px;
+    }
+    
+    
+}
+
+/* Медіа-запит для екранів шириною менше 400px */
+@media screen and (max-width: 400px) {
+    .form {
+        width: 80%;
+    }
+    /* Додаткові стилі для інших елементів, які ви хочете модифікувати для дуже малих екранів */
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .sectionA {
+        height: auto;
+    }
+
+    .cont_nav {
+        width: 100%;
+    }
+
+    .column {
+        flex-direction: column;
+    }
+
+    .photo {
+        margin: 8px 0;
+    }
+}
