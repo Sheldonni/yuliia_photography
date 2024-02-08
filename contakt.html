@@ -58,57 +58,76 @@
     </div>
     
 
-    <form action="#" method="post" class="form">
+    <form action="submit_form" method="post" class="form">
 
         
         <div class="input-groupA">
+
             <div class="firstname1">
-            <label for="firstname">First Name*</label>
-            <input type="text" id="firstname" name="firstname" placeholder="Enter Your First Name" maxlength="20">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Enter Your First Name" maxlength="20" required>
             </div>
 
             <div class="lastname1">  
-            <label for="lastname">Last Name*</label>
-            <input type="text" id="lastname" name="lastname" placeholder="Enter Your Last Name" maxlength="20">
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Enter Your Last Name" maxlength="20" required>
                 </div> 
         </div>
     
 
         <div class="input-groupB">
-
+        
+        
+            
             <div class="subject">
                 <label for="subject">Subject*</label>
-            <input type="text" id="subject" name="subject" placeholder="Enter Your Subject" maxlength="50">
+            <input type="text" id="subject" name="subject" placeholder="Enter Your Subject" maxlength="30" required>
             </div>
-
-
+        
+            
 
             <div class="email">
-                <label for="email">Email*</label>
+                <label for="email">Email:</label>
             <input type="email" id="email" name="email" placeholder="Enter Your Email" maxlength="50">
             </div>
 
+            
             <div class="adres">
-                <label for="adres">Your Adres*</label>
-            <input id="adres" name="adres" placeholder="Enter Your Adres" maxlength="50">
+                <label for="adres">Your Adres:</label>
+            <input id="adres" name="adres" placeholder="Enter Your Adres" maxlength="50" required>
             </div>
+        
+
+                <div class="phone">
+                <label for="phone">Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone" pattern="[\+48 ]?\d{3}[\- ]?\d{3}[\- ]?\d{3}"  maxlength="12"required>
+                </div>  
 
 
 
             <div class="textarea">
-                <label for="textarea">Message*</label>
+                <label for="textarea">Message:</label>
             <textarea id="textarea" name="textarea" placeholder="Enter Your message" rows="5" cols="20"></textarea>
             </div>
         </div>
+
         <div id="button">
         <button type="submit" class="send">SEND</button>  <button type="reset" class="reset">RESET</button>
         </div>
+
+        
           
+
         
 </form>
 </body>
    
 <script src="script.js"></script>
+
+
+
+
+
 
 
 
