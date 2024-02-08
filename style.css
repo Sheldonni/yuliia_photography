@@ -129,6 +129,35 @@ li a:hover{
     
 }
 
+
+/* Додайте стилі для стрілок */
+#arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    
+    padding: 10px;
+    border-radius: 50%;
+    display: none;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+/* Зробіть стрілки видимими при наведенні на збільшене зображення */
+.zoomed-container:hover .arrow {
+    display: block;
+}
+
+
+
 /* Початок другої сторінки Biography*/
 
 
@@ -151,45 +180,72 @@ li a:hover{
 
 
 .form{
+    box-sizing: border-box;
     margin: auto;
-    width: 350px;
-    height: 400px;
-    
+    width: 356px;
+    height: 480px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    
         
       
 }
+
+
 
 .input-groupA {
     width: 100%;
     display: flex;
     gap: 10px;
-    align-items: flex-start;
-    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 
-.input-groupB{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start; 
+.firstname1,.lastname1{
+    align-items: center;
     
 }
 
+
+
+
+.input-groupB{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+
+
+
 #subject,#email,#adres{
     position: relative;
-    width: 342px;
+    width: 100%;
+    text-align: center;
 
+}
+
+
+
+
+#phone{
+   position: relative;
+   width: 80%;
+   text-align: center;
+    
 }
 
 
 #textarea{
-    width: 342px;
+    width: 100%;
     height: 100px;
     resize: none;
     overflow: none;
@@ -199,6 +255,8 @@ li a:hover{
 
 
  #button{
+    margin-top: 12px;
+    width: 100%;
     position: relative;
     justify-content: center;
     display: flex;
@@ -238,10 +296,14 @@ li a:hover{
 }
 
 
-@media only screen and (max-width: 480px) and (min-width: 320px) and (max-device-width: 6.7in) and (min-device-width: 6.6in) {
-    /* Тут вказуйте ваші стилі для телефонів з діагоналлю близькою до 6.7 дюйма */
-    .form{
-        width: auto;
+@media only screen and (max-width: 480px) and (min-width: 320px) and (max-width: 6.7in) and (min-width: 6.6in) {
+    /* Стилі для телефонів з діагоналлю близькою до 6.7 дюйма */
+    body {
+        width: 80%;
+    }
+
+    .form {
+        width: 100%;
     }
 }
 
@@ -283,9 +345,12 @@ li a:hover{
 
     .column {
         flex-direction: column;
+        padding: 20px;
+
     }
 
     .photo {
-        margin: 8px 0;
+        margin: 10px 0;
     }
 }
+
