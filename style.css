@@ -313,6 +313,10 @@ li a:hover{
 
 /* Медіа-запит для екранів шириною менше 600px */
 @media screen and (max-width: 600px) {
+    
+    body{
+        width: 80%;
+    }
     .form .cont_A {
         width: 90%;
     }
@@ -344,7 +348,7 @@ li a:hover{
     }
 
     .cont_A {
-        width: auto;
+        width: 80%;
     }
 
     .cont_nav {
