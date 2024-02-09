@@ -269,7 +269,7 @@ li a:hover{
     padding: 10px 20px;
     cursor: pointer;
     transition: 0.5s ease;
-    color: #white;
+    color: white;
 }
 
 .send:hover, .reset:hover {
@@ -358,6 +358,16 @@ li a:hover{
     .send, .reset {
         width: 100%; /* Робимо кнопки повноширокими на малих екранах */
     }
+}
+
+/* Медіа-запит для екранів шириною більше 1200px */
+@media (min-width: 1201px) {
+    body{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+        /* Додаткові стилі для екранів шириною більше 1200px */
+    
 }
 
 
