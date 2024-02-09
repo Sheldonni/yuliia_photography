@@ -330,25 +330,6 @@ li a:hover{
     .send, .reset {
         width: 100%; /* Робимо кнопки повноширокими на малих екранах */
     }
-}
-
-/* Медіа-запит для екранів шириною менше 400px */
-@media screen and (max-width: 400px) {
-    .form .cont_A {
-        width: 80%;
-    }
-
-    .send, .reset {
-        width: 100%; /* Робимо кнопки повноширокими на малих екранах */
-    }
-}
-
-/* Додаткові стилі для інших розмірів екрану */
-@media only screen and (max-width: 600px) {
-    .sectionA {
-        height: auto;
-    }
-
     .cont_A {
         width: 80%;
     }
@@ -366,5 +347,19 @@ li a:hover{
         margin: 10px 0;
     }
 }
+}
+
+/* Медіа-запит для екранів шириною менше 400px */
+@media screen and (max-width: 400px) {
+    .form .cont_A {
+        width: 80%;
+    }
+
+    .send, .reset {
+        width: 100%; /* Робимо кнопки повноширокими на малих екранах */
+    }
+}
+
+
 
 
