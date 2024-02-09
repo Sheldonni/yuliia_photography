@@ -262,17 +262,17 @@ li a:hover{
     gap: 20px;
 }
 .send, .reset {
-    background-color: transparent;
+    background-color: #b8c0ff;
     border: 1px solid #000; /* Додайте рамку для більшої видимості кнопок */
     padding: 10px 20px;
     cursor: pointer;
     transition: 0.5s ease;
-    color: #faedcd;
+    color: #white;
 }
 
 .send:hover, .reset:hover {
-    background-color: #faedcd; /* Змініть колір фону при наведенні */
-    color: #faedcd; /* Змініть колір тексту при наведенні */
+    background-color: #d5bdaf; /* Змініть колір фону при наведенні */
+    color: #white; /* Змініть колір тексту при наведенні */
 }
 
 
