@@ -254,25 +254,23 @@ li a:hover{
 
 
 
- #button{
+#button {
     margin-top: 12px;
-    width: 100%;
-    position: relative;
-    justify-content: center;
     display: flex;
-    gap: 20px;
-    
+    justify-content: center;
+    align-items: center;
 }
-.send,.reset{
-    border: none;
+.send, .reset {
     background-color: transparent;
-    box-shadow: 1px 1px 1px 1px;
-    transition: 1s ease;
+    border: 1px solid #000; /* Додайте рамку для більшої видимості кнопок */
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
 }
 
-.send:hover,.reset:hover{
-    font-size: larger;
-    transition: 1s ease;
+.send:hover, .reset:hover {
+    background-color: #000; /* Змініть колір фону при наведенні */
+    color: #fff; /* Змініть колір тексту при наведенні */
 }
 
 
@@ -296,8 +294,8 @@ li a:hover{
 }
 
 
+/* Стилі для телефонів з діагоналлю близькою до 6.7 дюйма */
 @media only screen and (max-width: 480px) and (min-width: 320px) and (max-width: 6.7in) and (min-width: 6.6in) {
-    /* Стилі для телефонів з діагоналлю близькою до 6.7 дюйма */
     body {
         width: 80%;
     }
@@ -305,38 +303,46 @@ li a:hover{
     .form {
         width: 100%;
     }
+
+    .send, .reset {
+        width: 100%; /* Робимо кнопки повноширокими на малих екранах */
+    }
 }
-
-
 
 /* Медіа-запит для екранів шириною менше 600px */
 @media screen and (max-width: 600px) {
-    .form {
+    .form .cont_A {
         width: 90%;
     }
-    /* Додаткові стилі для інших елементів, які ви хочете модифікувати для малих екранів */
+
     .input-groupA, .input-groupB {
         gap: 5px;
     }
-    
-    
+
+    .send, .reset {
+        width: 100%; /* Робимо кнопки повноширокими на малих екранах */
+    }
 }
 
 /* Медіа-запит для екранів шириною менше 400px */
 @media screen and (max-width: 400px) {
-    .form {
+    .form .cont_A {
         width: 80%;
     }
-    /* Додаткові стилі для інших елементів, які ви хочете модифікувати для дуже малих екранів */
+
+    .send, .reset {
+        width: 100%; /* Робимо кнопки повноширокими на малих екранах */
+    }
 }
 
-
-
-
-
+/* Додаткові стилі для інших розмірів екрану */
 @media only screen and (max-width: 600px) {
     .sectionA {
         height: auto;
+    }
+
+    .cont_A {
+        width: auto;
     }
 
     .cont_nav {
@@ -346,11 +352,11 @@ li a:hover{
     .column {
         flex-direction: column;
         padding: 20px;
-
     }
 
     .photo {
         margin: 10px 0;
     }
 }
+
 
