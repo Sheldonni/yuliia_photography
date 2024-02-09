@@ -267,11 +267,12 @@ li a:hover{
     padding: 10px 20px;
     cursor: pointer;
     transition: 0.5s ease;
+    color: #faedcd;
 }
 
 .send:hover, .reset:hover {
-    background-color: #000; /* Змініть колір фону при наведенні */
-    color: #fff; /* Змініть колір тексту при наведенні */
+    background-color: #faedcd; /* Змініть колір фону при наведенні */
+    color: #faedcd; /* Змініть колір тексту при наведенні */
 }
 
 
