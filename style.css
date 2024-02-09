@@ -314,9 +314,6 @@ li a:hover{
 /* Медіа-запит для екранів шириною менше 600px */
 @media screen and (max-width: 600px) {
     
-    body{
-        width: 80%;
-    }
     .form .cont_A {
         width: 90%;
     }
