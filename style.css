@@ -305,7 +305,7 @@ li a:hover{
     }
 
     .form {
-        width: 100%;
+        width: 80%;
     }
 
     .send, .reset {
@@ -360,15 +360,8 @@ li a:hover{
     }
 }
 
-/* Медіа-запит для екранів шириною більше 1200px */
-@media (min-width: 1201px) {
-    body{
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-        /* Додаткові стилі для екранів шириною більше 1200px */
-    
-}
+
+
 
 
 
