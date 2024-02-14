@@ -187,7 +187,7 @@ li a:hover{
     box-sizing: border-box;
     margin: auto;
     width: 356px;
-    height: 480px;
+    height: 600px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
