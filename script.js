@@ -52,3 +52,17 @@ send.addEventListener('click', () => {
 
 
 
+
+/* start code on a 600 px menu hidden */
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleMenuBtn = document.querySelector('.toggle-menu-btn');
+  const menu = document.querySelector('.cont_nav');
+
+  toggleMenuBtn.addEventListener('click', function () {
+    menu.classList.toggle('show');
+  });
+});
+
+
+
+
