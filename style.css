@@ -284,6 +284,31 @@ li a:hover{
 
 
 
+/* start code write table (Price-style) */
+
+.table-container{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    
+    
+}
+
+table{
+    margin: auto;
+    width: 400px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+ tr {
+    border: 1px solid black;
+
+}
+
+
+
 
 
 .send.clicked {
