@@ -374,7 +374,7 @@ li a:hover{
    
     }
 
-    ul{
+    ul .show{
         display: flex;
     }
 
