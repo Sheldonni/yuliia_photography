@@ -362,6 +362,34 @@ li a:hover{
 
 
 
+/* start write code hidden menu blok on a max-width 600px */
+
+@media only screen and (max-width: 600px) {
+
+    .cont_nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+   
+    }
+
+    ul{
+        display: flex;
+    }
+
+    li {
+        text-align: center;
+        width: 100%;
+      }
+
+      .toggle-menu-btn {
+        display: block;
+      }
+
+}
+
+
+
 
 
 
