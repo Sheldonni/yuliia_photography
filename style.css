@@ -105,9 +105,8 @@ li a:hover{
 
 .photo img{
     
-    width: 30%;
+    width: 100%;
     height: auto;
-    margin: cals(10%/6);
     margin-bottom: 8px;
     border: 2px solid #B9B7BD;
     object-fit: cover;
@@ -342,9 +341,7 @@ table{
     .send, .reset {
         width: 100%; /* Робимо кнопки повноширокими на малих екранах */
     }
-    .photo img{
-        width: 70%
-    }
+   
 }
 
 /* Медіа-запит для екранів шириною менше 600px */
@@ -380,10 +377,8 @@ table{
     .photo {
         margin: 10px 0;
     }
-     .photo img{
-        width: 70%
-    }
-}
+   
+
 }
 
 /* Медіа-запит для екранів шириною менше 400px */
@@ -391,9 +386,7 @@ table{
     .form .cont_A {
         width: 80%;
     }
-     .photo img{
-        width: 70%
-    }
+  
     .send, .reset {
         width: 100%; /* Робимо кнопки повноширокими на малих екранах */
     }
