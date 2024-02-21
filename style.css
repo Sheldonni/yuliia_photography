@@ -105,8 +105,9 @@ li a:hover{
 
 .photo img{
     
-    width: 100%;
+    width: 30%;
     height: auto;
+    margin: cals(10%/6);
     margin-bottom: 8px;
     border: 2px solid #B9B7BD;
     object-fit: cover;
