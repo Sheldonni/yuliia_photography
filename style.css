@@ -342,6 +342,9 @@ table{
     .send, .reset {
         width: 100%; /* Робимо кнопки повноширокими на малих екранах */
     }
+    .photo img{
+        width: 70%
+    }
 }
 
 /* Медіа-запит для екранів шириною менше 600px */
@@ -377,6 +380,9 @@ table{
     .photo {
         margin: 10px 0;
     }
+     .photo img{
+        width: 70%
+    }
 }
 }
 
@@ -385,7 +391,9 @@ table{
     .form .cont_A {
         width: 80%;
     }
-
+     .photo img{
+        width: 70%
+    }
     .send, .reset {
         width: 100%; /* Робимо кнопки повноширокими на малих екранах */
     }
